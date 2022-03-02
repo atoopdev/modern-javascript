@@ -16,5 +16,24 @@ const player = {
 }
 
 // below allows you to reference contents without doing player.name notation
-const {name, club, address:{city}} = player;
-console.log(`${name} plays for ${club} in ${city}`)
+// const {name, club, address:{city}} = player;
+// console.log(`${name} plays for ${club} in ${city}`)
+
+const student = {
+    name: "Kyle",
+    age: 24,
+    projects: {
+        diceGame: "Two player dice game using JavaScript"
+    }
+}
+
+const {name, age, projects:{diceGame}} = student
+// console.log(`${diceGame}`)
+
+// destructuring arrays
+// goes index by index
+let [firstName, middleName, lastName] = ['Dylan', 'Coding God', 'Jones']
+// will output Dylan
+console.log(firstName)
+
+
